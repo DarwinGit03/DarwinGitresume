@@ -1,0 +1,178 @@
+@import url("navigation.css");
+
+
+/* arrow up */
+.arrow-up ion-icon{
+	position: fixed;
+	bottom: 5%;
+	left: 5%;
+	padding: 15px;
+	border-radius: 50%;
+	border: 2px solid var(--primary-color);
+	cursor: pointer;
+	color: var(--primary-color);
+	font-weight: 600;
+	font-size: 25px;
+	animation: floatImage 4s ease-in-out infinite;
+	animation-delay: 1s, 3s;
+	box-shadow: 0 13.36px 8.896px #c4b59d, 0 -2px 1px #fff;
+	z-index: 100;
+}
+
+
+/* cover page */
+.whole-cover{
+	background: var(--body-color);
+}
+.cover-page{
+	display: flex;
+	place-items: center;
+/*	background: var(--body-color);*/
+	height: 80vh;
+	justify-content: space-around;
+}
+.cover-page p{
+	color: var(--secondary-color);
+}
+.myprofile{
+	text-align: center;
+}
+.myprofile img{
+	width: 500px;
+	height: 500px;
+	opacity: 0;
+	animation: zoomIn .5s ease forwards;
+	animation-delay: .5s;
+}
+.myprofile p{
+	opacity: 0;
+	animation: slideBottom 1s ease forwards;
+	animation-delay: .5s;
+}
+
+.mydescription{
+/*	animation: slideleft 1s ease forwards;*/
+}
+.cover-con h2{
+	color: var(--secondary-color);
+	font-size: 4rem;
+	text-shadow: 2px 2px 5px var(--primary-color);
+}
+
+.cover-page .cvdownload{
+	margin: 15px 0;
+}
+.cover-page .cvdownload .btn-getin{
+	animation: slideleft 1s ease forwards;
+	animation-delay: .5s;
+	font-size: 1rem;
+	box-shadow: 1px 1px #fff;
+	opacity: 0;
+}
+.cover-con h2{
+	opacity: 0;
+	animation: slideBottom 1s ease forwards;
+	animation-delay: .5s;
+}
+/*.cover-con h2:nth-of-type(1){
+	animation: slideBottom 1s ease forwards;
+	animation-delay: .5s;
+}
+.cover-con h2:nth-of-type(2){
+	animation: slideTop 1s ease forwards;
+	animation-delay: .5s;
+}*/
+.mydescription .text-animation{
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.cover-page .sociallogo{
+	margin: 10px 0;
+	opacity: 0;
+	animation: slideright 1s ease forwards;
+	animation-delay: .5s;
+}
+.cover-page .sociallogo ion-icon{
+	width: 30px;
+	height: 25px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+.cover-page .sociallogo .icon-youtube{
+	color: var(--youtube);
+	box-shadow: 0 2.36px 8.896px, 0 0px 0px #fff;
+}
+.cover-page .sociallogo .icon-facebook{
+	color: var(--facebook);
+	box-shadow: 0 2.36px 8.896px, 0 0px 0px #fff;
+}
+.cover-page .sociallogo .icon-tiktok{
+	color: var(--secondary-color);
+	box-shadow: 0 2.36px 8.896px, 0 0px 0px #fff;
+}
+.cover-page .sociallogo .icon-linkedin{
+	color: var(--linkedin);
+	box-shadow: 0 2.36px 8.896px, 0 0px 0px #fff;
+}
+
+
+/* youtube channnel */
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1060px){
+	.cover-page{
+		padding: 50px;
+	}
+	.cover-con h2{
+		font-size: 3rem;
+	}
+	.myprofile img{
+		width: 370px;
+		height: 370px;
+	}
+}
+@media screen and (max-width: 660px){
+	.cover-page{
+		display: inline-block;
+		width: 100%;
+		padding: 0;
+	}
+	.mydescription{
+		padding: 50px 30px 0px 30px;
+		text-align: center;
+	}
+	.cover-page .cover-con{
+	}
+	.cover-con h2{
+		font-size: 1.5rem;
+	}
+	.cover-page .cvdownload{
+		text-align: center;
+	}
+	.cover-page .cvdownload .btn-getin{
+		font-size: .8rem;
+		padding: 5px 10px;
+	}
+	.sociallogo{
+		text-align: center;
+	}
+	.myprofile img{
+		width: 270px;
+		height: 270px;
+	}
+	.myprofile p{
+		text-align: center;
+		font-size: .7rem;
+	}
+	.arrow-up ion-icon{
+		padding: 10px;
+	}
+}
